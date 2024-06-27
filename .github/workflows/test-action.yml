@@ -14,7 +14,7 @@ jobs:
             tac README.md
 
          - name: Generate ASCII art
-           run: cosway -f tiger "Beware !, Who is coming ! " >> tiger.txt
+           run: cowsay -f tiger "Beware !, Who is coming ! " >> tiger.txt
            
          #- name: list the content
          #  run: ls
