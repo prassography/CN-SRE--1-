@@ -1,0 +1,18 @@
+name: cloud native test
+on: push
+jobs:
+    first_job:
+        runs-on: ubuntu-latest
+        steps:
+         - name: checkout
+           uses: actions/checkout@v4
+         
+         - name: message
+           run: echo "welcome to cloud native test"
+           
+         - name: list the content
+           run: ls
+           
+         - name: read the file
+           run: cat README.md 
+        
