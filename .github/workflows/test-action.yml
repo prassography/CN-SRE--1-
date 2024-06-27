@@ -1,7 +1,7 @@
 name: cloud native test
 on: push
 jobs:
-    first_job:
+    test_job:
         runs-on: ubuntu-latest
         steps:
          - name: checkout
