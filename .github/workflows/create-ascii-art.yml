@@ -1,0 +1,19 @@
+name: ASCII art
+on: 
+    push
+jobs:
+    ASCII_job:
+        runs-on: ubuntu-latest
+        steps:
+         - name: checkout
+           uses: actions/checkout@v4
+         - name: install cowsay
+           run: sudo apt-get install cowsay -y 
+         - name: Generate ASCII art
+           run: cowsay -f tiger "Beware !, Who is coming ! its tiger " >> tiger.txt
+
+         - name: test and list repo files
+           run: |
+             sudo grep -i "tiger" tiger.txt
+             cat tiger.txt
+             ls -lrta
