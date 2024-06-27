@@ -9,9 +9,9 @@ jobs:
          
          - name: List and read the contents
            run: | 
-           echo "welcome to cloud native test"
-           ls -lrta
-           tac README.md
+            echo "welcome to cloud native test"
+            ls -lrta
+            tac README.md
 
          - name: Generate ASCII art
            run: cosway -f tiger "Beware !, Who is coming ! " >> tiger.txt
