@@ -7,8 +7,10 @@ jobs:
         steps:
          - name: checkout
            uses: actions/checkout@v4
+
          - name: install cowsay
            run: sudo apt-get install cowsay -y 
+           
          - name: Generate ASCII art
            run: cowsay -f dragon "Beware !, Who is coming ! its tiger " >> tiger.txt
 
