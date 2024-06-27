@@ -7,12 +7,18 @@ jobs:
          - name: checkout
            uses: actions/checkout@v4
          
-         - name: message
-           run: echo "welcome to cloud native test"
+         - name: List and read the contents
+           run: | 
+           echo "welcome to cloud native test"
+           ls -lrta
+           tac README.md
+
+         - name: Generate ASCII art
+           run: cosway -f tiger "Beware !, Who is coming ! " >> tiger.txt
            
-         - name: list the content
-           run: ls
+         #- name: list the content
+         #  run: ls
            
-         - name: read the file
-           run: cat README.md 
+         #- name: read the file
+         #  run: cat README.md 
         
