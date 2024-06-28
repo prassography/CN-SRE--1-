@@ -1,0 +1,18 @@
+name: ASCII via shell
+on: 
+    push
+jobs:
+    ASCII_job:
+        runs-on: ubuntu-latest
+        steps:
+         - name: checkout
+           uses: actions/checkout@v4
+
+         - name: list repo
+           run: ls -ltra 
+           
+         - name: adding exec perm
+           run: chmod +x ascii-lab.sh
+
+         - name: executing shell
+           run: ./ascii-lab.sh
