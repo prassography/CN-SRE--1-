@@ -16,3 +16,4 @@ jobs:
 
          - name: executing shell
            run: .github/workflows/ascii-lab.sh
+           
