@@ -12,7 +12,7 @@ jobs:
            run: ls -ltra 
            
          - name: adding exec perm
-           run: chmod +x ascii-lab.sh
+           run: chmod +x prassography/CN-SRE--1-/.github/workflows/ascii-lab.sh
 
          - name: executing shell
-           run: ./ascii-lab.sh
+           run: .github/workflows/ascii-lab.sh
